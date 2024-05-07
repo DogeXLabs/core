@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Gurmukhi;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gurmukhi"), url(/fonts/gurmukhi-mn.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: NeueMontreal;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/);
+  src: local("NeueMontreal"), url(/fonts/NeueMontreal-Regular.ttf) format("ttf"),
+    url(/fonts/NeueMontreal-Regular.woff) format("woff"),
+    url(/fonts/NeueMontreal-Regular.woff2) format("woff2");
+}
+
+* {
+  font-family: NeueMontreal;
+}
+.custom-screen {
+  @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.custom-btn-bg {
+  background: radial-gradient(
+    67.5% 67.5% at 50% 50%,
+    #4b5563 0%,
+    rgba(75, 85, 99, 0) 100%
+  );
+}
+
+.custom-btn-bg:hover {
+  background: radial-gradient(
+    118.75% 118.75% at 50% 50%,
+    #4b5563 0%,
+    rgba(75, 85, 99, 0) 100%
+  );
+}
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+.panel-title {
+  color: white;
+}
+#whitepaper-mdx h1 {
+  font-size: 3em;
+}
+#whitepaper-mdx h2 {
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+#whitepaper-mdx p {
+  margin-bottom: 20px;
+}
+
+#whitepaper-mdx ul {
+  padding: 10px 30px 30px 30px;
+  list-style-type: disc;
+}
+
+.custom-button {
+  background: linear-gradient(
+    96.04deg,
+    #f65031 1.82%,
+    #7015e3 103.22%
+  ) !important;
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 16px 20px !important;
+  border-radius: 14px !important;
+}
+.custom-button span {
+  font-family: NeueMontreal !important;
+}
+
+.bg-hero {
+  background-image: url("/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .bg-hero {
+    background-image: url("/images/hero-bg-mobile.png");
+    background-position: bottom;
+  }
+}
