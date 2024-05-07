@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navigation = [
     { name: "Features", href: "/#features" },
-    { name: "Whitepaper", href: "/#whitepaper" },
+    { name: "Whitepaper", href: "/whitepaper" },
   ];
 
   useEffect(() => {
