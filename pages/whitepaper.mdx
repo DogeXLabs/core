@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import LayoutEffect from "@/components/LayoutEffect"
 import SectionWrapper from "@/components/SectionWrapper"
@@ -17,29 +18,23 @@ Platforms like RSK (Rootstock) make it possible to create smart contracts and to
 
 it's worth noting that while RSK enables Ethereum-like smart contract functionality and token creation, all of this occurs on the RSK sidechain, not directly on the Doge blockchain. The Doge blockchain essentially provides security to the RSK network through its hashing power, but the management of state, execution of smart contracts, and the specifics of token standards like DRC-20 happen within the RSK ecosystem.
 
-## New Developments: The Ordinal Network
+## New Developments: DRC-20
 
 
-A more recent development that leverages the Ordinals protocol on the Doge blockchain. Ordinals allow for the inscription of arbitrary data directly onto individual satoshis, the smallest units of Doge. This method effectively embeds data, including images, text, or code, into the Doge blockchain in a way that was not previously emphasized. As a result, it has opened up new possibilities for creating token-like structures, NFTs, and other digital assets directly on Doge, without relying on a separate smart contract platform like RSK.
+A more recent development allows for the inscription of arbitrary data directly onto the base layer, the smallest units of Doge. This method effectively embeds data, including images, text, or code, into the Doge blockchain in a way that was not previously emphasized. As a result, it has opened up new possibilities for creating token-like structures, NFTs, and other digital assets directly on Doge.
 
-### **How DRC-20 and Ordinal Inscriptions Work**
+**State Management Limitations**: It's important to note that while DRC-20 can embed data into the Doge blockchain, the blockchain itself does not natively support the complex state management and smart contract functionality found in platforms like Ethereum. As such, while ownership and transfers of inscribed assets can be managed through Doge transactions, the ecosystem for managing these assets is inherently more limited than on platforms designed specifically for smart contracts and tokenization.
 
-1. **Ordinal Inscriptions**: The Ordinals protocol numbers each satoshi in the Doge supply sequentially, allowing for specific satoshis to be inscribed with additional data. These inscriptions are permanent and can include anything from simple messages to images, and potentially, executable code.
-2. **Tracking and Managing State**: In the context of DRC-20 tokens or similar constructs that aim to utilize ordinals for tokenization, the state management would primarily depend on the ability to identify and verify the ownership and transfer of the inscribed satoshis. The state is inherently tied to the blockchain's transaction history, as ownership of a particular inscribed satoshi (and thus the data or "token" it represents) is transferred through standard Doge transactions.
-3. **Ownership Verification**: Ownership of a DRC-20 token or an NFT created through ordinals is verified through the possession of the inscribed satoshi. If a user controls a Doge address that holds a satoshi inscribed with specific data (e.g., a token or NFT identifier), they effectively "own" that token or NFT. Transferring the token to another user involves sending the inscribed satoshi to the recipient's Doge address.
-4. **Token Transfer and Management**: The transfer of tokens or NFTs created with this method is constrained by the limitations and capabilities of the Doge network's scripting language. While basic transfers of inscribed satoshis can be executed using standard Doge transactions, more complex operations (like those common to ERC-20 or ERC-721 tokens on Ethereum) may be challenging or infeasible due to Doge's scripting language limitations.
-5. **State Management Limitations**: It's important to note that while the Ordinals protocol and methods like DRC-20 can embed data into the Doge blockchain, the blockchain itself does not natively support the complex state management and smart contract functionality found in platforms like Ethereum. As such, while ownership and transfers of inscribed assets can be managed through Doge transactions, the ecosystem for managing these assets is inherently more limited than on platforms designed specifically for smart contracts and tokenization.
-
-## DogeX Network: Creating a REAL Layer 2 (L2) solution for Doge that leverages Ordinal inscriptions to implement a rollup-like mechanism.
+## DogeX Network: Creating a REAL Layer 2 (L2) solution for Doge that leverages inscriptions to implement a rollup-like mechanism.
 
 Such a project would aim to combine the scalability and functionality of rollups (as seen in Ethereum's ecosystem) with the security and widespread adoption of Doge. However, there are unique challenges and considerations to address given the fundamental differences in how Doge and Ethereum are designed, especially in terms of smart contract capabilities and state management.
 
-Given Doge's scripting limitations and the unique capabilities of Ordinal inscriptions, designing a rollup strategy that works within these constraints requires innovative thinking and leveraging the strengths of Doge. A viable approach would focus on simplicity, security, and leveraging off-chain computations with on-chain verifications to the extent possible. Here's a conceptual strategy for a rollup system using Ordinal inscriptions:
+Given Doge's scripting limitations and the unique capabilities of inscriptions, designing a rollup strategy that works within these constraints requires innovative thinking and leveraging the strengths of Doge. A viable approach would focus on simplicity, security, and leveraging off-chain computations with on-chain verifications to the extent possible. Here's a conceptual strategy for a rollup system using inscriptions:
 
 ### **1. Basic Concept**
 
 - **Off-Chain State Management**: Manage the rollup's state entirely off-chain, including account balances, transaction history, and any smart contract-like interactions. This off-chain state represents the L2 layer.
-- **Ordinal Inscriptions for State Commitment**: Periodically commit the state or state transitions of the rollup to the Doge blockchain via Ordinal inscriptions. This could involve inscribing a Merkle root or a cryptographic hash representing the current state or recent state transitions into a satoshi.
+- ** Inscriptions for State Commitment**: Periodically commit the state or state transitions of the rollup to the Doge blockchain via inscriptions. This could involve inscribing a Merkle root or a cryptographic hash representing the current state or recent state transitions into a satoshi.
 
 ### **2. Transaction Processing**
 
@@ -48,17 +43,17 @@ Given Doge's scripting limitations and the unique capabilities of Ordinal inscri
 
 ### **3. State Commitment on Doge**
 
-- **Inscribing State Proofs**: Use the Ordinal protocol to inscribe the state transition proof onto a satoshi. Each inscribed satoshi acts as a timestamped, immutable record of the rollup's state at a specific point in time.
+- **Inscribing State Proofs**: Inscribe the state transition proof onto a satoshi. Each inscribed satoshi acts as a timestamped, immutable record of the rollup's state at a specific point in time.
 - **Verifiability**: Ensure that anyone can verify the integrity of the rollup's state by comparing the off-chain state or state transitions with the inscribed proofs on Doge.
 
 ### **4. Withdrawals and Deposits**
 
 - **Deposits**: Could be managed by sending Doges to a specific address or set of addresses associated with the rollup, with the transaction details indicating the intent to deposit into the rollup. The off-chain system would monitor these addresses and credit the corresponding rollup accounts.
-- **Withdrawals**: More challenging without native smart contract functionality. One approach could be a withdrawal request within the rollup system, followed by an off-chain verification process. Once verified, the corresponding amount could be sent from the rollup's Doge address(es) to the user's specified address.
+- **Withdrawals**: A withdrawal request within the rollup system, followed by an off-chain verification process. Once verified, the corresponding amount could be sent from the rollup's Doge address(es) to the user's specified address.
 
 ### **5. Challenges and Considerations**
 
-- **Dispute Resolution**: Without native smart contracts, enforcing dispute resolutions or fraud proofs becomes challenging. Solutions could involve off-chain arbitration with on-chain evidence submission via Ordinal inscriptions.
+- **Dispute Resolution**: Without native smart contracts, enforcing dispute resolutions or fraud proofs becomes challenging. Solutions could involve off-chain arbitration with on-chain evidence submission via inscriptions.
 - **Security**: The system's security heavily depends on the integrity and security of the off-chain infrastructure managing the rollup.
 - **Scalability vs. Doge Block Space**: While this approach can increase transaction throughput relative to direct on-chain transactions, it still requires block space for state commitments. Efficient use of this space is essential.
 
@@ -91,20 +86,20 @@ With Layer 2, it's possible to introduce features that are not natively supporte
 At its core, DogeX Network utilizes a novel block segmentation mechanism to facilitate fast and cheap transactions. This approach allows DogeX Network to serve millions of customers without compromising on speed or cost. The chain's design also includes a robust timestamping mechanism, ensuring that all transactions and blocks on the DogeX Network chain are verifiably in sync with the Doge blockchain.
 
 
-Drawing inspiration from Arbitrum's approach to creating a scalable, efficient Layer 2 solution for Ethereum, we can outline a technical plan for Ordinal Chain, a Doge Layer 2 solution with EVM (Ethereum Virtual Machine) smart contracts, a native coin pegged to BTC's price, and a bridging mechanism for BTC. The goal is to provide scalability, enable smart contracts, and maintain tight synchronization with the Doge base layer through inscriptions on individual satoshis.
+Drawing inspiration from Arbitrum's approach to creating a scalable, efficient Layer 2 solution for Ethereum, we can outline a technical plan forDogeX network, a Doge Layer 2 solution with EVM (Ethereum Virtual Machine) smart contracts, a native coin pegged to BTC's price, and a bridging mechanism for BTC. The goal is to provide scalability, enable smart contracts, and maintain tight synchronization with the Doge base layer through inscriptions on individual satoshis.
 
 **Technical Overview and Key Components**
 
 Arbitrum's Approach: Arbitrum utilizes a "geth sandwich" architecture with Geth (go-ethereum) at the core for emulating EVM contracts and maintaining Ethereum state, surrounded by ArbOS for Layer 2 functions, and standard node software on top. This structure facilitates execution and proving by compiling the State Transition Function (STF) to WebAssembly (WASM) for dispute resolution, employing a general-purpose compression algorithm (Brotli) for data efficiency​​.
 
-**Adapting for Ordinal Chain:**
+**Adapting for DogeX network:**
 
 - Core Layer (Geth Equivalent): Implement a Doge node emulation layer to interpret and execute smart contracts within the EVM-compatible environment. This layer will interact with the Doge blockchain for final state commitments.
 - Middle Layer (ArbOS Equivalent): Develop a custom software layer, "OrdOS," to handle Layer 2 functionality, including transaction batching, smart contract execution, and cross-chain bridge functionalities. OrdOS will manage the intricacies of interacting with the Doge network, such as inscriptions on satoshis for data anchoring.
 - Top Layer (Node Software): Utilize existing Doge node software with modifications to support EVM transactions, bridge operations, and interactions with the core and middle layers.
-- Smart Contract Compatibility: Integrate EVM compatibility to enable developers to write smart contracts in Solidity or Vyper, facilitating a smooth transition for Ethereum developers to build on Doge. This requires the emulation of Ethereum's smart contract execution environment within the Ordinal Chain.
-- Bridging Mechanism: Implement a secure and efficient bridging mechanism to allow users to lock BTC on the Doge blockchain and mint an equivalent amount of the native coin on the Ordinal Chain, maintaining a 1:1 peg. This process should be reversible, enabling users to burn the native coin on Ordinal Chain and unlock their original BTC.
-- Data Compression and Optimization: Employ data compression techniques, similar to Arbitrum's use of Brotli, for efficient data storage and transmission. This will be crucial for minimizing the data footprint of Ordinal Chain transactions inscribed on the Doge blockchain​​.
+- Smart Contract Compatibility: Integrate EVM compatibility to enable developers to write smart contracts in Solidity or Vyper, facilitating a smooth transition for Ethereum developers to build on Doge. This requires the emulation of Ethereum's smart contract execution environment within the DogeX network.
+- Bridging Mechanism: Implement a secure and efficient bridging mechanism to allow users to lock BTC on the Doge blockchain and mint an equivalent amount of the native coin on the DogeX network, maintaining a 1:1 peg. This process should be reversible, enabling users to burn the native coin on DogeX network and unlock their original BTC.
+- Data Compression and Optimization: Employ data compression techniques, similar to Arbitrum's use of Brotli, for efficient data storage and transmission. This will be crucial for minimizing the data footprint of DogeX network transactions inscribed on the Doge blockchain​​.
 - Dispute Resolution Mechanism: Adopt a rollup strategy "DogeX Network" similar to optimistic rollup with interactive fraud proofs for dispute resolution. This involves validators posting state updates to the Doge blockchain, with a challenge period during which any incorrect claims can be disputed through a structured interactive proving process​​.
 
 
@@ -175,14 +170,14 @@ The development of DogeX Network is planned in phases, starting with the core in
   - Engage with the community to gather feedback, iterate on the platform, and implement new features and improvements.
 
 ## Tokenomics
-Designing the tokenomics for a project like the Ordinal Chain, inspired by Arbitrum and adapted for the Doge ecosystem, involves creating an economic model that incentivizes participation, secures the network, and facilitates the utility of the Layer 2 solution. Given the project's unique position as a Doge-native smart contract platform with EVM compatibility, the tokenomics should reflect the goals of scalability, security, and developer engagement.
+Designing the tokenomics involves creating an economic model that incentivizes participation, secures the network, and facilitates the utility of the Layer 2 solution. Given the project's unique position as a Doge-native smart contract platform with EVM compatibility, the tokenomics should reflect the goals of scalability, security, and developer engagement.
 
-**Native Token: BTC-Pegged Coin**
-- Purpose: The native token of the Ordinal Chain is pegged to Doge's value, ensuring that users can leverage the security and familiarity of Doge within a more flexible smart contract environment. This token will be used for transaction fees, smart contract executions, and as a staking token for network validators.
+**Native Token: DOGE-Pegged Coin**
+- Purpose: The native token of the DogeX network is pegged to Doge's value, ensuring that users can leverage the security and familiarity of Doge within a more flexible smart contract environment. This token will be used for transaction fees, smart contract executions, and as a staking token for network validators.
 - Peg Mechanism: The pegging mechanism to BTC will require a robust and transparent process, likely involving oracles for real-time price feeds and smart contracts to manage the lock/unlock of BTC and the minting/burning of the native token.
 
 **Transaction Fees:**
-- Model: Transaction fees on the Ordinal Chain will be paid in the native BTC-pegged token. Fees will be determined based on the transaction's complexity, data storage requirements, and network congestion, similar to gas fees on Ethereum.
+- Model: Transaction fees on the DogeX network will be paid in the native BTC-pegged token. Fees will be determined based on the transaction's complexity, data storage requirements, and network congestion, similar to gas fees on Ethereum.
 - Distribution: Fees collected will be distributed among validators and stakers to incentivize the securing of the network. A portion of the fees may also be allocated to a community fund to support ecosystem development.
 
 **Staking and Validation:**
@@ -190,7 +185,7 @@ Designing the tokenomics for a project like the Ordinal Chain, inspired by Arbit
 - Validator Rewards: Validators who actively participate in proposing blocks, executing transactions, and maintaining the network's integrity will receive rewards in the form of transaction fees and potentially newly minted tokens, depending on the adopted monetary policy.
 
 **Ecosystem Development Fund:**
-- Purpose: A portion of the native tokens may be allocated to an ecosystem development fund, aimed at financing projects, dApps, and initiatives that contribute to the growth and utility of the Ordinal Chain.
+- Purpose: A portion of the native tokens may be allocated to an ecosystem development fund, aimed at financing projects, dApps, and initiatives that contribute to the growth and utility of the DogeX network.
 - Allocation and Grants: Tokens in this fund can be distributed through grants, hackathons, and other community engagement programs designed to attract developers and foster innovation on the platform.
 
 **Token Distribution:**
@@ -205,7 +200,7 @@ Designing the tokenomics for a project like the Ordinal Chain, inspired by Arbit
 ## Governance and Community
 DogeX Network is committed to a decentralized governance model that empowers its community. Stakeholders will have a say in the future development, feature implementation, and strategic direction of the DogeX Network chain.
 
-- Framework: The Ordinal Chain adopts a decentralized governance model, enabling token holders to vote on proposals affecting the network's future direction and development.
+- Framework: The DogeX network adopts a decentralized governance model, enabling token holders to vote on proposals affecting the network's future direction and development.
 - Participation: Governance rights are directly tied to the native coin, ensuring stakeholders have a vested interest in the ecosystem's success.
 
 ## Summary
