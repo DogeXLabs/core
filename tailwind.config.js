@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Gurmukhi: ['Gurmukhi', 'sans-serif'],
         NeueMontreal: ['NeueMontreal', 'serif'],
       },
     },

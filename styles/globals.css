@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Gurmukhi;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Gurmukhi"), url(/fonts/gurmukhi-mn.ttf) format("ttf");
-}
-
-@font-face {
   font-family: NeueMontreal;
   font-style: normal;
   font-weight: 400;
