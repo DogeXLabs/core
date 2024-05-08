@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const Footer = () => {
   const navigation = [
-    { name: "GitHub", href: "/" },
+    { name: "GitHub", href: "https://github.com/dogexnetwork/core" },
     { name: "Whitepaper", href: "/whitepaper" },
   ];
 

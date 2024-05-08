@@ -5,7 +5,7 @@ const Brand = ({ ...props }) => (
         src="/logo.svg"
         alt="Mailgo logo"
         {...props}
-        width={230}
+        width={180}
         height={30}
         priority
     />
