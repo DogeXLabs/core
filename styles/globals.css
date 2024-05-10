@@ -90,3 +90,16 @@ html {
     background-position: bottom;
   }
 }
+
+.fun-image,
+.chat-image {
+  display: none;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1000px) {
+  .fun-image,
+  .chat-image {
+    display: block;
+  }
+}
