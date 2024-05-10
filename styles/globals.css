@@ -66,6 +66,7 @@ html {
   ) !important;
   color: white !important;
   font-size: 18px !important;
+  line-height: 24px !important;
   font-weight: normal !important;
   display: flex !important;
   justify-content: center !important;
@@ -75,6 +76,8 @@ html {
 }
 .custom-button span {
   font-family: NeueMontreal !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
 }
 
 .bg-hero {
@@ -102,4 +105,15 @@ html {
   .chat-image {
     display: block;
   }
+}
+.linear-bg-cards {
+  background: linear-gradient(
+    120deg,
+    rgba(46, 46, 46, 1) 40%,
+    rgba(71, 53, 41, 1) 52%,
+    rgba(103, 62, 34, 1) 60%,
+    rgba(179, 85, 17, 1) 75%,
+    rgba(255, 60, 0, 1) 91%,
+    rgba(255, 0, 0, 1) 100%
+  );
 }
