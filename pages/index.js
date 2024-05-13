@@ -1,5 +1,6 @@
 import About from "@/components/ui/About";
 import CTA from "@/components/ui/CTA";
+import Chain from "@/components/ui/Chain";
 import Dapps from "@/components/ui/Dapps";
 import Features from "@/components/ui/Features";
 import Hero from "@/components/ui/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Features />
+      <Chain />
       <Dapps />
       <Social />
       <CTA />
