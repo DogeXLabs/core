@@ -25,7 +25,25 @@ const Dapps = () => {
 
   return (
     <section className="relative flex justify-center items-center custom-screen">
-      <div className="custom-screen flex justify-center pt-16 pb-8 md:pt-28 md:pb-14">
+      <div className="custom-screen flex flex-col justify-center gap-8 pt-16 pb-8 md:pt-28 md:pb-14">
+        <div className="grid grid-cols-2 gap-2 w-full custom-images">
+          <Image
+            src="/images/fun.png"
+            alt="fun"
+            width={250}
+            height={220}
+            quality={100}
+            className="animate-up pl-2 w-full"
+          />
+          <Image
+            src="/images/chat.png"
+            alt="chat"
+            width={300}
+            height={220}
+            quality={100}
+            className="animate-up mt-10 pr-2 w-full"
+          />
+        </div>
         <div className="flex flex-col justify-center items-center gap-8 md:gap-11 max-w-2xl mx-auto text-center">
           <h2 className="text-white text-5xl md:text-8xl md:leading-[90px]">
             Build native SocialFi and GameFi dapps on Doge

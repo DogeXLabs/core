@@ -100,12 +100,20 @@ html {
   z-index: -1;
 }
 
+.custom-images{
+  display: grid;
+}
+
 @media only screen and (min-width: 1000px) {
   .fun-image,
   .chat-image {
     display: block;
   }
+  .custom-images{
+    display: none;
+  }
 }
+
 .linear-bg-cards {
   background: linear-gradient(
     120deg,
