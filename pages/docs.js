@@ -4,36 +4,229 @@ export default function Docs() {
   return (
     <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col items-center pb-5 w-full bg-white max-md:max-w-full">
-        <div className="flex gap-0 justify-between self-stretch px-10 py-3 border-b border-gray-200 border-solid max-md:flex-wrap max-md:px-5">
-          <div className="flex gap-4 my-auto text-lg font-bold tracking-tight text-neutral-900">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/76736d89a201b30c399f6a2e42a912a11f3aa6f9f07deb8dc746794a26064024?"
-              className="shrink-0 my-auto w-4 aspect-square"
-            />
-            <div>DogeXLabs Layer 2</div>
+   
+    <div className="flex flex-col justify-center bg-white">
+      <div className="flex flex-col items-center px-20 pt-5 pb-20 w-full bg-white max-md:px-5 max-md:max-w-full">
+        <div className="flex flex-col px-4 py-10 w-full max-w-[960px] max-md:max-w-full">
+          <div className="text-4xl font-bold tracking-tighter text-neutral-900 max-md:mr-2.5 max-md:max-w-full">
+            Built for developers
           </div>
-          <div className="flex gap-5 pl-20 max-md:flex-wrap">
-            <div className="flex gap-5 justify-between py-2.5 text-sm font-medium leading-5 whitespace-nowrap text-neutral-900">
-              <div>Technology</div>
-              <div>Team</div>
-              <div>Roadmap</div>
-              <div>Docs</div>
+          <div className="mt-4 text-base leading-6 text-neutral-900 max-md:mr-2.5 max-md:max-w-full">
+            DogeXLabs Layer 2 is designed to be easy to use, with familiar tools
+            and developer-friendly features.
+          </div>
+          <div className="justify-center mt-16 max-md:mt-10 max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow pb-3 max-md:mt-3 max-md:max-w-full">
+                  <img
+                    loading="lazy"
+                    srcSet="..."
+                    className="w-full aspect-[1.79] max-md:max-w-full"
+                  />
+                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900 max-md:max-w-full">
+                    Scalable smart contracts
+                  </div>
+                  <div className="text-sm leading-5 text-stone-500 max-md:max-w-full">
+                    Our Layer 2 solution lets you run complex smart contracts at
+                    the speed of Dogecoin
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow pb-3 max-md:mt-3 max-md:max-w-full">
+                  <img
+                    loading="lazy"
+                    srcSet="..."
+                    className="w-full aspect-[1.79] max-md:max-w-full"
+                  />
+                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900 max-md:max-w-full">
+                    Secure and decentralized
+                  </div>
+                  <div className="text-sm leading-5 text-stone-500 max-md:max-w-full">
+                    Powered by a network of validators, our Layer 2 solution is
+                    as secure and decentralized as Dogecoin itself
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-center items-center p-2.5 w-10 h-10 rounded-3xl bg-stone-100">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/09f89b535762b31c7fe996c1de0df0b25821b15b2541d99ed65eb1267bb95f04?"
-                className="w-5 aspect-square"
-              />
-            </div>
-            <img
-              loading="lazy"
-              srcSet="..."
-              className="shrink-0 w-10 aspect-square"
-            />
           </div>
         </div>
+        <div className="self-start mt-5 ml-24 text-2xl font-bold tracking-tight text-neutral-900 max-md:ml-2.5">
+          Use cases
+        </div>
+        <div className="flex flex-col p-4 mt-3 w-full max-w-[960px] max-md:max-w-full">
+          <div className="flex gap-3 max-md:flex-wrap">
+            <div className="flex flex-col flex-1 p-4 bg-white rounded-lg border border-solid border-stone-200">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/efbb9d724d2ef6f8eed429eeb070aaae8a1b87d5227839dec5e303bf72ffd146?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Decentralized finance
+              </div>
+              <div className="mt-6 text-sm leading-5 text-stone-500">
+                Create new DeFi apps and bring existing ones to Dogecoin
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 p-4 bg-white rounded-lg border border-solid border-stone-200">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/27b9bb3642302ae3069dc6019828922dbe0ec20d7e477c16c395c8e02a505aeb?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                NFT marketplaces
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Design and trade NFTs at the speed of Dogecoin
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 p-4 bg-white rounded-lg border border-solid border-stone-200">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b8e84ede375f5216900ed9ea9376df51e51fc5f134d865daa6600687b36ebae5?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Social media
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Build censorship-resistant social media platforms
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 p-4 bg-white rounded-lg border border-solid border-stone-200">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/81d55367bfe8207b53204039a8fb1777ed5c39ec3252f0604f5d18c5aba1807f?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Gaming
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Power fast, fun, and secure blockchain games
+              </div>
+            </div>
+            <div className="flex flex-col flex-1 p-4 bg-white rounded-lg border border-solid border-stone-200 max-md:pr-5">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/be7e6219ff5976c58dd7fba5981fda61edef5f2b081f57027d26c9490239694c?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                E-commerce
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Enable instant, low-fee transactions for online shopping
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col p-4 mt-3 w-44 max-w-full bg-white rounded-lg border border-solid border-stone-200 max-md:pr-5">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d84bfe282542905783764585e5fdc1eb40df9aebb019098d157077aab5eb9ba?"
+              className="w-6 aspect-square"
+            />
+            <div className="mt-3 text-base font-bold text-neutral-900">
+              DAOs
+            </div>
+            <div className="mt-1 text-sm leading-5 text-stone-500">
+              Govern protocol updates and fund community projects
+            </div>
+          </div>
+        </div>
+        <div className="self-start mt-5 ml-24 text-2xl font-bold tracking-tight text-neutral-900 max-md:ml-2.5">
+          Getting started
+        </div>
+        <div className="flex flex-col p-4 mt-3 mb-96 w-full max-w-[960px] max-md:mb-10 max-md:max-w-full">
+          <div className="flex gap-3 max-md:flex-wrap">
+            <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px] max-md:pr-5">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ce69b720273946aed4314f00a421fce6b7a48151251b3fa1cb31d741b4f484b?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Developer documentation
+              </div>
+              <div className="mt-6 text-sm leading-5 text-stone-500">
+                Explore our Layer 2 API and other technical resources
+              </div>
+            </div>
+            <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px]">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/7665a7959c368c1f1c0407933a3074eae79038867768a49c5e53f54174fcc06a?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Tutorials
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Follow step-by-step guides for building on DogeXLabs
+              </div>
+            </div>
+            <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px] max-md:pr-5">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/7ce1ed21276572a86be54c405f62880a2d58d6cfd43170c5de2c1281554235c6?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Community forum
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Connect with other builders and share your projects
+              </div>
+            </div>
+            <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px]">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/abe6825aa249b8d10601bc47a896b5c92cd36d86ec2f8105645adcaa1aedd59a?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Testnet
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Try out DogeXLabs Layer 2 in a risk-free environment
+              </div>
+            </div>
+            <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px] max-md:pr-5">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c73f91fe7c2c6d03c9fc13e4c6c33ffece449b9d0cd1ebada91fc6b9df28698?"
+                className="w-6 aspect-square"
+              />
+              <div className="mt-3 text-base font-bold text-neutral-900">
+                Mainnet
+              </div>
+              <div className="mt-1 text-sm leading-5 text-stone-500">
+                Access the live Layer 2 network for production use
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col p-4 mt-3 w-44 max-w-full bg-white rounded-lg border border-solid border-stone-200">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab7de1bcfd2ecf1d8ba7cd062806845828d4f14001b0c8da3495829ef561e330?"
+              className="w-6 aspect-square"
+            />
+            <div className="mt-3 text-base font-bold text-neutral-900">
+              Ecosystem projects
+            </div>
+            <div className="mt-6 text-sm leading-5 text-stone-500">
+              Discover apps, tools, and integrations in the DogeXLabs ecosystem
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+
         <div className="px-4 py-10 mt-5 w-full max-w-[960px] max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">

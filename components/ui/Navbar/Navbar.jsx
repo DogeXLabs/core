@@ -8,7 +8,7 @@ const Navbar = () => {
   const menuBtnEl = useRef();
 
   const navigation = [
-    { name: "Features", href: "/#features" },
+    { name: "Docs", href: "/docs" },
     { name: "Whitepaper", href: "/whitepaper" },
   ];
 
