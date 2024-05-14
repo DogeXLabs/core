@@ -8,9 +8,13 @@ const Navbar = () => {
   const menuBtnEl = useRef();
 
   const navigation = [
-    { name: "Docs", href: "/docs" },
     { name: "Whitepaper", href: "/whitepaper" },
+    { name: "Docs", href: "/docs" },
+    { name: "GitHub", href: "https://github.com/dogexlabs/core" },
+    { name: "Stake DOGE", href: "/app" },
   ];
+  
+
 
   useEffect(() => {
     setMounted(true);

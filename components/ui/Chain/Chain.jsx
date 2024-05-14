@@ -51,15 +51,6 @@ const Chain = () => {
               Stake DOGE and farm
             </NavLink>
           </div>
-          <div className="flex flex-col gap-4">
-            <h4 className="max-w-xl text-6xl text-white">
-              As secure and decentralized as L1
-            </h4>
-            <p className="text-base text-white/60">
-              We secure our blocks and sync state with L1 using our inscription
-              rollup
-            </p>
-          </div>
         </div>
       </div>
     </section>

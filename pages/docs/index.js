@@ -144,6 +144,94 @@ export default function Docs() {
             </div>
           </div>
         </div>
+        
+    <div className="flex flex-col px-5 max-w-[928px]">
+      <div className="w-full text-2xl font-bold tracking-tight text-neutral-900 max-md:max-w-full">
+        Key components
+      </div>
+      <div className="flex gap-3 mt-7 max-md:flex-wrap">
+        <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px]">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f20c97b4720d6270cdf999cdafcf0f6f8c9eff235e4d7ec01805f7af2cc505a2?"
+            className="w-6 aspect-square"
+          />
+          <div className="mt-3 text-base font-bold text-neutral-900">
+            Bridge
+          </div>
+          <div className="mt-1 text-sm leading-5 text-stone-500">
+            Connects Layer 2 to Ethereum mainnet
+          </div>
+        </div>
+        <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px]">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9f5182471700b7c3f5ba18eca36cf38f2ca23c00cebe5e4bdd82e52f461fc5e?"
+            className="w-6 aspect-square"
+          />
+          <div className="mt-3 text-base font-bold text-neutral-900">
+            Validator
+          </div>
+          <div className="mt-1 text-sm leading-5 text-stone-500">
+            Processes and validates transactions off-chain
+          </div>
+        </div>
+        <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px] max-md:pr-5">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4f994e2493bfc9de8c91edbb23b3a10e6cd489813e51adf4e896ff43ca6869ea?"
+            className="w-6 aspect-square"
+          />
+          <div className="mt-3 text-base font-bold text-neutral-900">
+            Sequencer
+          </div>
+          <div className="mt-1 text-sm leading-5 text-stone-500">
+            Orders and batches transactions for submission to Ethereum mainnet
+          </div>
+        </div>
+        <div className="flex flex-col p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px]">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a85f64e359f4bca36c785cd9456b526b778fd801b89b7826cfdd295d9a8cd3f?"
+            className="w-6 aspect-square"
+          />
+          <div className="mt-3 text-base font-bold text-neutral-900">
+            Aggregator
+          </div>
+          <div className="mt-1 text-sm leading-5 text-stone-500">
+            Collects and processes user transactions
+          </div>
+        </div>
+        <div className="flex flex-col items-start p-4 bg-white rounded-lg border border-solid border-stone-200 h-[177px] w-[177px] max-md:pr-5">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6147ab661912adde0b36d9c5796f38d1dbb05f67789d9beada740171d9e98fcd?"
+            className="w-6 aspect-square"
+          />
+          <div className="mt-3 text-base font-bold text-neutral-900">
+            Rollup
+          </div>
+          <div className="mt-1 text-sm leading-5 text-stone-500">
+            Stores transaction data
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col p-4 mt-3 w-44 max-w-full bg-white rounded-lg border border-solid border-stone-200">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea8560e90000df23ec9d2bbe5842cea6aafb3d4533d4eb9b7adcd6c765094851?"
+          className="w-6 aspect-square"
+        />
+        <div className="mt-3 text-base font-bold text-neutral-900">
+          Operator
+        </div>
+        <div className="mt-1 text-sm leading-5 text-stone-500">
+          Manages Layer 2 operations
+        </div>
+      </div>
+    </div>
+
+
         <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col items-center px-20 pt-5 pb-20 w-full bg-white max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col px-4 py-10 w-full max-w-[960px] max-md:max-w-full">
