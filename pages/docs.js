@@ -5,7 +5,146 @@ export default function Docs() {
     <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col items-center pb-5 w-full bg-white max-md:max-w-full">
    
-    <div className="flex flex-col justify-center bg-white">
+   
+
+
+        <div className="px-4 py-10 mt-5 w-full max-w-[960px] max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                srcSet="..."
+                className="grow w-full aspect-[1.06] max-md:mt-10"
+              />
+            </div>
+            <div className="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow justify-center text-base font-bold leading-6 text-neutral-900 max-md:mt-10 max-md:max-w-full">
+                <div className="text-5xl tracking-tighter leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[56px]">
+                  Unlock the next generation of web3 with DogeXLabs Layer 2
+                </div>
+                <div className="mt-16 max-md:mt-10 max-md:max-w-full">
+                  We are building the first EVM-compatible, optimistic rollup
+                  that supports sharding and low gas costs.
+                </div>
+                <div className="flex gap-3 mt-14 tracking-wide max-md:flex-wrap max-md:mt-10">
+                  <div className="flex flex-col grow shrink-0 justify-center px-5 py-3 bg-amber-400 rounded-3xl basis-0 w-fit">
+                    <div className="justify-center bg-amber-400">
+                      Read whitepaper
+                    </div>
+                  </div>
+                  <div className="flex flex-col justify-center px-5 py-3 rounded-3xl bg-stone-100">
+                    <div className="justify-center bg-stone-100">
+                      Get in touch
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col px-4 py-10 w-full max-w-[960px] max-md:max-w-full">
+          <div className="text-4xl font-bold tracking-tighter text-neutral-900 max-md:max-w-full">
+            Why DogeXLabs Layer 2?
+          </div>
+          <div className="justify-center mt-14 max-md:mt-10 max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow pb-3 max-md:mt-3">
+                  <img
+                    loading="lazy"
+                    srcSet="..."
+                    className="w-full aspect-[1.79]"
+                  />
+                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
+                    EVM compatible
+                  </div>
+                  <div className="text-sm leading-5 text-stone-500">
+                    Deploy your existing Solidity contracts with no changes, or
+                    write new ones from scratch. Get the benefits of L2 without
+                    the hassle.
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow pb-14 max-md:mt-3">
+                  <img
+                    loading="lazy"
+                    srcSet="..."
+                    className="w-full aspect-[1.79]"
+                  />
+                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
+                    Optimistic rollup
+                  </div>
+                  <div className="text-sm leading-5 text-stone-500">
+                    Use your existing tooling to deploy and manage your
+                    contracts on our rollup.
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow pb-14 max-md:mt-3">
+                  <img
+                    loading="lazy"
+                    srcSet="..."
+                    className="w-full aspect-[1.79]"
+                  />
+                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
+                    Sharding
+                  </div>
+                  <div className="text-sm leading-5 text-stone-500">
+                    Scale your dapp to support millions of users. Cross-shard
+                    communication is coming soon.
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow pb-8 max-md:mt-3">
+                  <img
+                    loading="lazy"
+                    srcSet="..."
+                    className="w-full aspect-[1.79]"
+                  />
+                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
+                    Low gas costs
+                  </div>
+                  <div className="text-sm leading-5 text-stone-500">
+                    Enjoy a 100x reduction in gas costs compared to Ethereum L1.
+                    Pay as little as 10 gwei per transaction.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="self-start mt-5 ml-44 text-2xl font-bold tracking-tight text-neutral-900 max-md:ml-2.5">
+          How it works
+        </div>
+        <div className="justify-center p-4 mt-3 w-full max-w-[960px] max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                srcSet="..."
+                className="grow w-full aspect-[1.79] max-md:mt-7"
+              />
+            </div>
+            <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                srcSet="..."
+                className="grow w-full aspect-[1.79] max-md:mt-7"
+              />
+            </div>
+            <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+              <img
+                loading="lazy"
+                srcSet="..."
+                className="grow w-full aspect-[1.79] max-md:mt-7"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col items-center px-20 pt-5 pb-20 w-full bg-white max-md:px-5 max-md:max-w-full">
         <div className="flex flex-col px-4 py-10 w-full max-w-[960px] max-md:max-w-full">
           <div className="text-4xl font-bold tracking-tighter text-neutral-900 max-md:mr-2.5 max-md:max-w-full">
@@ -225,144 +364,6 @@ export default function Docs() {
       </div>
     </div>
  
-
-
-        <div className="px-4 py-10 mt-5 w-full max-w-[960px] max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
-              <img
-                loading="lazy"
-                srcSet="..."
-                className="grow w-full aspect-[1.06] max-md:mt-10"
-              />
-            </div>
-            <div className="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col grow justify-center text-base font-bold leading-6 text-neutral-900 max-md:mt-10 max-md:max-w-full">
-                <div className="text-5xl tracking-tighter leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[56px]">
-                  Unlock the next generation of web3 with DogeXLabs Layer 2
-                </div>
-                <div className="mt-16 max-md:mt-10 max-md:max-w-full">
-                  We are building the first EVM-compatible, optimistic rollup
-                  that supports sharding and low gas costs.
-                </div>
-                <div className="flex gap-3 mt-14 tracking-wide max-md:flex-wrap max-md:mt-10">
-                  <div className="flex flex-col grow shrink-0 justify-center px-5 py-3 bg-amber-400 rounded-3xl basis-0 w-fit">
-                    <div className="justify-center bg-amber-400">
-                      Read whitepaper
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-center px-5 py-3 rounded-3xl bg-stone-100">
-                    <div className="justify-center bg-stone-100">
-                      Get in touch
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col px-4 py-10 w-full max-w-[960px] max-md:max-w-full">
-          <div className="text-4xl font-bold tracking-tighter text-neutral-900 max-md:max-w-full">
-            Why DogeXLabs Layer 2?
-          </div>
-          <div className="justify-center mt-14 max-md:mt-10 max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-              <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow pb-3 max-md:mt-3">
-                  <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="w-full aspect-[1.79]"
-                  />
-                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
-                    EVM compatible
-                  </div>
-                  <div className="text-sm leading-5 text-stone-500">
-                    Deploy your existing Solidity contracts with no changes, or
-                    write new ones from scratch. Get the benefits of L2 without
-                    the hassle.
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow pb-14 max-md:mt-3">
-                  <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="w-full aspect-[1.79]"
-                  />
-                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
-                    Optimistic rollup
-                  </div>
-                  <div className="text-sm leading-5 text-stone-500">
-                    Use your existing tooling to deploy and manage your
-                    contracts on our rollup.
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow pb-14 max-md:mt-3">
-                  <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="w-full aspect-[1.79]"
-                  />
-                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
-                    Sharding
-                  </div>
-                  <div className="text-sm leading-5 text-stone-500">
-                    Scale your dapp to support millions of users. Cross-shard
-                    communication is coming soon.
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow pb-8 max-md:mt-3">
-                  <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="w-full aspect-[1.79]"
-                  />
-                  <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
-                    Low gas costs
-                  </div>
-                  <div className="text-sm leading-5 text-stone-500">
-                    Enjoy a 100x reduction in gas costs compared to Ethereum L1.
-                    Pay as little as 10 gwei per transaction.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="self-start mt-5 ml-44 text-2xl font-bold tracking-tight text-neutral-900 max-md:ml-2.5">
-          How it works
-        </div>
-        <div className="justify-center p-4 mt-3 w-full max-w-[960px] max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-              <img
-                loading="lazy"
-                srcSet="..."
-                className="grow w-full aspect-[1.79] max-md:mt-7"
-              />
-            </div>
-            <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <img
-                loading="lazy"
-                srcSet="..."
-                className="grow w-full aspect-[1.79] max-md:mt-7"
-              />
-            </div>
-            <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-              <img
-                loading="lazy"
-                srcSet="..."
-                className="grow w-full aspect-[1.79] max-md:mt-7"
-              />
-            </div>
-          </div>
-        </div>
         <div className="self-start mt-5 ml-44 text-2xl font-bold tracking-tight text-neutral-900 max-md:ml-2.5">
           Get involved
         </div>
