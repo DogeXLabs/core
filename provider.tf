@@ -12,4 +12,11 @@ provider "google" {
   project = var.project_id
   region  = var.region
   zone    = var.zone
+  credentials = filebase64decode(var.credentials)
+}
+
+variable "credentials" {
+  type = string
+  description = "The contents of the service account JSON file."
+  default = ""
 }
