@@ -19,7 +19,7 @@ resource "google_compute_instance" "default" {
     #!/bin/bash
     sudo apt-get update
     sudo apt-get install -y docker.io
-    sudo usermod -aG docker ${USER}
+    sudo usermod -aG docker \$USER
     newgrp docker
     docker run -d -p 30333:30333 -p 9933:9933 -p 9944:9944 parity/substrate --chain dev
   EOT
