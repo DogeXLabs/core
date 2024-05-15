@@ -1,4 +1,3 @@
-output "bucket_name" {
-  description = "The name of the storage bucket"
-  value       = google_storage_bucket.bucket.name
+output "instance_ip" {
+  value = google_compute_instance.default.network_interface[0].access_config[0].nat_ip
 }
