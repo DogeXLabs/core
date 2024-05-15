@@ -29,7 +29,7 @@ jobs:
     - name: Plan Terraform
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
-      run: terraform plan -var "google_credentials=${{ secrets.GCP_SA_KEY }}" -var "project_id=dogextestnet-423407" -out=tfplan
+      run: terraform plan -var "google_credentials=${{ secrets.GCP_SA_KEY }}" -var "project_id=dogextestnet-423407" -out=tfplan -chdir
 
     - name: Apply Terraform
       env:
