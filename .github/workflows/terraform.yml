@@ -27,7 +27,11 @@ jobs:
       run: terraform init
 
     - name: Plan Terraform
-      run: terraform plan -var "project_id=${{ secrets.GCP_PROJECT_ID }}" -out=tfplan
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+      run: terraform plan -var "google_credentials=${{ secrets.GCP_SA_KEY }}" -var "project_id=${{ secrets.GCP_PROJECT_ID }}" -out=tfplan
 
     - name: Apply Terraform
+      env:
+        GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
       run: terraform apply "tfplan"
