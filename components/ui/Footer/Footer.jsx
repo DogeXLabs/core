@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 const Footer = () => {
   const navigation = [
     { name: "Whitepaper", href: "/whitepaper" },
-    { name: "Docs", href: "/docs" },
+   // { name: "Docs", href: "/docs" },
     { name: "GitHub", href: "https://github.com/dogexlabs/core" },
-    { name: "Stake DOGE", href: "/app" },
+   // { name: "Stake DOGE", href: "/app" },
   ];
 
   const [isMounted, setMounted] = useState(false);
