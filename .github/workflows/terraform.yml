@@ -17,7 +17,7 @@ jobs:
       uses: google-github-actions/setup-gcloud@main
       with:
         version: 'latest'
-        project_id: 'dogextestnet'
+        project_id: dogextestnet-423407
         service_account_key: ${{ secrets.GCP_SA_KEY }}
 
     - name: Set up Terraform
@@ -29,7 +29,7 @@ jobs:
     - name: Plan Terraform
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
-      run: terraform plan -var "google_credentials=${{ secrets.GCP_SA_KEY }}" -var "project_id=dogextestnet" -out=tfplan
+      run: terraform plan -var "google_credentials=${{ secrets.GCP_SA_KEY }}" -var "project_id=dogextestnet-423407" -out=tfplan
 
     - name: Apply Terraform
       env:
