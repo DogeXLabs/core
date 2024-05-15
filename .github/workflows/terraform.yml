@@ -1,43 +1,33 @@
-name: Terraform
+name: Deploy Substrate Nodes
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - dev
 
 jobs:
-  terraform:
-    name: 'Terraform'
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Terraform
-        uses: hashicorp/setup-terraform@v1
-        with:
-          terraform_version: 1.0.0
+    - name: Set up Google Cloud SDK
+      uses: google-github-actions/setup-gcloud@master
+      with:
+        version: 'latest'
+        project_id: dogextestnet
+        service_account_key: ${{ secrets.GCP_SA_KEY }}
 
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v0
-        with:
-          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+    - name: Set up Terraform
+      uses: hashicorp/setup-terraform@v1
 
-      - name: Set up Google Cloud SDK
-        uses: google-github-actions/setup-gcloud@v1
-        with:
-          project_id: dogextestnet
-          service_account_key: ${{ secrets.GOOGLE_CREDENTIALS }}
+    - name: Initialize Terraform
+      run: terraform init
 
-      - name: Terraform Init
-        run: terraform init
+    - name: Plan Terraform
+      run: terraform plan -var "project_id=${{ secrets.GCP_PROJECT_ID }}" -out=tfplan
 
-      - name: Terraform Plan
-        run: terraform plan
-
-      - name: Terraform Apply
-        run: terraform apply -auto-approve
+    - name: Apply Terraform
+      run: terraform apply "tfplan"
