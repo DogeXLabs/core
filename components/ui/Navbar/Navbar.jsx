@@ -39,7 +39,7 @@ const Navbar = () => {
       <nav
         className={`pt-2 md:text-sm md:block absolute w-full ${
           state
-            ? "bg-[#282828] absolute z-20 top-0 inset-x-0 rounded-b-2xl shadow-xl md:shadow-none md:bg-transparent"
+            ? "bg-[#282828] absolute z-20 top-0 inset-x-0 rounded-b-2xl shadow-xl md:shadow-none"
             : "hidden"
         }`}
       >
