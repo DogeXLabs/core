@@ -7,7 +7,7 @@ provider "google" {
 resource "google_compute_instance" "substrate-node" {
   count        = 3
   name         = "substrate-node-${count.index}"
-  machine_type = "e2-micro"
+  machine_type = "e2-medium"
   zone         = var.zone
 
   boot_disk {
@@ -40,6 +40,5 @@ resource "google_compute_instance" "substrate-node" {
 }
 
 output "instance_ips" {
-  description = "The public IP addresses of the Substrate nodes"
-  value       = google_compute_instance.substrate-node[*].network_interface[0].access_config[0].nat_ip
+  value = google_compute_instance.substrate-node[*].network_interface[0].access_config[0].nat_ip
 }

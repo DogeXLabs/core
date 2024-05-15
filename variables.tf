@@ -4,6 +4,7 @@ variable "google_credentials" {
 
 variable "project_id" {
   type = string
+  default = "dogextestnet"
 }
 
 variable "region" {
