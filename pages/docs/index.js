@@ -13,7 +13,7 @@ export default function Docs() {
             <div className="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                srcSet="..."
+                src='/features/community-and-developer-engagement.svg'
                 className="grow w-full aspect-[1.06] max-md:mt-10"
               />
             </div>
@@ -52,7 +52,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-3 max-md:mt-3">
                   <img
                     loading="lazy"
-                    srcSet="..."
+                    src="/features/scalability-and-efficiency.svg"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -69,7 +69,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-14 max-md:mt-3">
                   <img
                     loading="lazy"
-                    srcSet="..."
+                    src="'/features/community-and-developer-engagement.svg'"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -85,7 +85,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-14 max-md:mt-3">
                   <img
                     loading="lazy"
-                    srcSet="..."
+                    src="'/features/community-and-developer-engagement.svg'"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -101,7 +101,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-8 max-md:mt-3">
                   <img
                     loading="lazy"
-                    srcSet="..."
+                    src="'/features/community-and-developer-engagement.svg'"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -124,21 +124,21 @@ export default function Docs() {
             <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                srcSet="..."
+                src="'/features/community-and-developer-engagement.svg'"
                 className="grow w-full aspect-[1.79] max-md:mt-7"
               />
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                srcSet="..."
+                src="'/features/community-and-developer-engagement.svg'"
                 className="grow w-full aspect-[1.79] max-md:mt-7"
               />
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                srcSet="..."
+                src="'/features/community-and-developer-engagement.svg'"
                 className="grow w-full aspect-[1.79] max-md:mt-7"
               />
             </div>
