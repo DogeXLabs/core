@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="relative">
+    <header className="relative bg-orange-50">
       <div className="custom-screen md:hidden absolute w-full">
         <NavHeader
           menuBtnEl={menuBtnEl}
