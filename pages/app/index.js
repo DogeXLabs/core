@@ -36,7 +36,7 @@ export default function () {
                 <div className="flex gap-3 mt-14 tracking-wide max-md:flex-wrap max-md:mt-10">
                   <div className="flex flex-col grow shrink-0 justify-center px-5 py-3 bg-amber-400 rounded-3xl basis-0 w-fit">
                     <div className="justify-center bg-amber-400">
-                      Whitelistt soon maybe
+                      Whitelistt soon
                     </div>
                   </div>
                   <div className="flex flex-col justify-center px-5 py-3 rounded-3xl bg-stone-100">
