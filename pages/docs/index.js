@@ -69,7 +69,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-14 max-md:mt-3">
                   <img
                     loading="lazy"
-                    src="'/features/community-and-developer-engagement.svg'"
+                    src="/features/community-and-developer-engagement.svg"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -85,7 +85,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-14 max-md:mt-3">
                   <img
                     loading="lazy"
-                    src="'/features/community-and-developer-engagement.svg'"
+                    src="/features/community-and-developer-engagement.svg"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -101,7 +101,7 @@ export default function Docs() {
                 <div className="flex flex-col grow pb-8 max-md:mt-3">
                   <img
                     loading="lazy"
-                    src="'/features/community-and-developer-engagement.svg'"
+                    src="/features/community-and-developer-engagement.svg"
                     className="w-full aspect-[1.79]"
                   />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900">
@@ -246,11 +246,6 @@ export default function Docs() {
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col grow pb-3 max-md:mt-3 max-md:max-w-full">
-                  <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="w-full aspect-[1.79] max-md:max-w-full"
-                  />
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900 max-md:max-w-full">
                     Scalable smart contracts
                   </div>
@@ -262,11 +257,7 @@ export default function Docs() {
               </div>
               <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col grow pb-3 max-md:mt-3 max-md:max-w-full">
-                  <img
-                    loading="lazy"
-                    srcSet="..."
-                    className="w-full aspect-[1.79] max-md:max-w-full"
-                  />
+                  
                   <div className="mt-3 text-base font-medium leading-6 text-neutral-900 max-md:max-w-full">
                     Secure and decentralized
                   </div>
