@@ -1,7 +1,14 @@
+import Head from "next/head";
+import SectionWrapper from "@/components/SectionWrapper"
 import * as React from "react";
 
-export default function Docs() {
+export default function () {
   return (
+  <>
+    <Head>
+      <title>Docs</title>
+    </Head>
+    <SectionWrapper>
     <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col items-center pb-5 w-full bg-white max-md:max-w-full">
    
@@ -124,21 +131,21 @@ export default function Docs() {
             <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                src="'/features/community-and-developer-engagement.svg'"
+                src="/features/community-and-developer-engagement.svg"
                 className="grow w-full aspect-[1.79] max-md:mt-7"
               />
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                src="'/features/community-and-developer-engagement.svg'"
+                src="/features/community-and-developer-engagement.svg"
                 className="grow w-full aspect-[1.79] max-md:mt-7"
               />
             </div>
             <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                src="'/features/community-and-developer-engagement.svg'"
+                src="/features/community-and-developer-engagement.svg"
                 className="grow w-full aspect-[1.79] max-md:mt-7"
               />
             </div>
@@ -501,7 +508,7 @@ export default function Docs() {
         </div>
       </div>
     </div>
-  );
-}
-
+    </SectionWrapper>
+  </>
+)}
 

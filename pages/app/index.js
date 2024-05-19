@@ -13,7 +13,7 @@ export default function Dashboard() {
             <div className="flex flex-col w-[45%] max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                srcSet="..."
+                src="/features/community-and-developer-engagement.svg"
                 className="grow w-full aspect-[1.06] max-md:mt-10"
               />
             </div>
@@ -34,7 +34,7 @@ export default function Dashboard() {
                   </div>
                   <div className="flex flex-col justify-center px-5 py-3 rounded-3xl bg-stone-100">
                     <div className="justify-center bg-stone-100">
-                      Get in touch
+                      Get in touch (coming soon)
                     </div>
                   </div>
                 </div>
