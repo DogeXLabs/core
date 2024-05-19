@@ -1,7 +1,14 @@
+import Head from "next/head";
+import SectionWrapper from "@/components/SectionWrapper"
 import * as React from "react";
 
-export default function Dashboard() {
+export default function () {
   return (
+  <>
+    <Head>
+      <title>Whitelist</title>
+    </Head>
+    <SectionWrapper>
     <div className="flex flex-col justify-center bg-white">
       <div className="flex flex-col items-center pb-5 w-full bg-white max-md:max-w-full">
    
@@ -29,12 +36,12 @@ export default function Dashboard() {
                 <div className="flex gap-3 mt-14 tracking-wide max-md:flex-wrap max-md:mt-10">
                   <div className="flex flex-col grow shrink-0 justify-center px-5 py-3 bg-amber-400 rounded-3xl basis-0 w-fit">
                     <div className="justify-center bg-amber-400">
-                      Read whitepaper
+                      Whitelistt soon maybe
                     </div>
                   </div>
                   <div className="flex flex-col justify-center px-5 py-3 rounded-3xl bg-stone-100">
-                    <div className="justify-center bg-stone-100">
-                      Get in touch (coming soon)
+                    <div onClick={()=> window.location.replace('https:t.me/dogexlabs')} className="justify-center bg-stone-100">
+                      Get in touch telegram @dogexlabs
                     </div>
                   </div>
                 </div>
@@ -44,5 +51,7 @@ export default function Dashboard() {
         </div>
         </div>
         </div>
+    </SectionWrapper>
+    </>
   )
 }
