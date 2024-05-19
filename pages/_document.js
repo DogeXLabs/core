@@ -5,8 +5,8 @@ export default function Document() {
     <Html lang='en'>
       <Head />
       <body className='bg-[#282828]'>
-        <Main />
-        <NextScript /> 
+        <Main /> 
+        <NextScript />
       </body>
     </Html>
   );
