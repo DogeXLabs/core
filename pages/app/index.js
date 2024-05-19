@@ -40,7 +40,7 @@ export default function () {
                     </div>
                   </div>
                   <div className="flex flex-col justify-center px-5 py-3 rounded-3xl bg-stone-100">
-                    <div onClick={()=> window.location.replace('https:t.me/dogexlabs')} className="justify-center bg-stone-100">
+                    <div onClick={()=> window.location.replace('https://t.me/dogexlabs')} className="justify-center cursor-pointer bg-stone-100">
                       Get in touch telegram @dogexlabs
                     </div>
                   </div>
