@@ -20,7 +20,7 @@ export default function Dashboard() {
             <div className="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow justify-center text-base font-bold leading-6 text-neutral-900 max-md:mt-10 max-md:max-w-full">
                 <div className="text-5xl tracking-tighter leading-[60px] max-md:max-w-full max-md:text-4xl max-md:leading-[56px]">
-                  Unlock the next generation of web3 with DogeXLabs Layer 2
+                  Unlock the next generation of web3 with DogeXLabs Layer 2 
                 </div>
                 <div className="mt-16 max-md:mt-10 max-md:max-w-full">
                   We are building the first EVM-compatible, optimistic rollup
