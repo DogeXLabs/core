@@ -9,9 +9,9 @@ const Navbar = () => {
 
   const navigation = [
     { name: "Whitepaper", href: "/whitepaper" },
-    // { name: "Docs", href: "/docs" },
+    { name: "Docs", href: "/docs" },
     { name: "GitHub", href: "https://github.com/dogexlabs" },
-   // { name: "Stake DOGE", href: "/app" },
+   { name: "Stake DOGE", href: "/app" },
   ];
   
 
